@@ -1,3 +1,5 @@
+Gear 360 Stitcher, using ffmpeg.
+
 Requirements: ffmpeg, exiftool, pyhton, google spatial media injector
 
 
@@ -11,4 +13,8 @@ What the script does:
 It first stitches the equicircular to equirectangular. Then applies 2 masks to correct edge darkness. Lastly it applies the 360 metaata and corrects capture date.
 
 
-Currently tested on a steamdeck. You should be able to run it in Android via termux (it can install ffmpeg, exiftool and python). You can change the encoder by manually editing it.
+Limitation:
+There is no attempt to make brightness the same between front and rear images if hey exposed differently bu the camera. It does not align edge lines.
+
+
+Currently tested on a steamdeck. You should be able to run it in Android via termux (it can install ffmpeg, exiftool and python). Encoder is libx264 but you can edit the ffmpeg parameters if you want to use hardware acceleration.
