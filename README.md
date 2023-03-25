@@ -1,7 +1,4 @@
-Requirements:
-ffmpeg
-exiftool
-google spatial media injector
+Requirements: ffmpeg, exiftool, pyhton, google spatial media injector
 
 
 How to:
